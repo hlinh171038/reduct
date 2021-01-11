@@ -1,10 +1,14 @@
-const hobbyReducer = (state,action) => {
+const initialState = {
+    list:[],
+    active:[]
+}
+const hobbyReducer = (state=initialState,action) => {
     switch (action.type) {
         case 'ADD_HOBBY': {
-            break;
+            return state
         }
         case 'SET_ACTIVE_HOBBY':{
-            break;
+            return state
         }
         default:
             return state;

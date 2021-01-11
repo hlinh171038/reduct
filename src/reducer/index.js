@@ -1,7 +1,7 @@
- import { combineReducer } from 'react-redux'
+ import { combineReducers } from 'redux'
  import hobbyReducer from './hobby';
  import userReducer from './user';
- const rootReducer = combineReducer({
+ const rootReducer = combineReducers({
     hobby:hobbyReducer,
     user:userReducer
  })
